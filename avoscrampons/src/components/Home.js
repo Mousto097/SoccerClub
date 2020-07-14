@@ -4,7 +4,6 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-// import Background from '../img/banner';
 
 const Home = () => {
   const classes = useStyles();
@@ -16,19 +15,18 @@ const Home = () => {
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <img src="logo.png" alt="logo" className={classes.logo} />
-          <Typography component="h1" variant="h3">
+          <Typography component="h1" variant="h3" gutterBottom>
             A vos crampons!
           </Typography>
-          <Typography component="h1" variant="h5">
-            BIENVENUE À: A VOS CRAMPONS CANADA
+          <Typography component="h1" variant="h5" gutterBottom>
+            BIENVENUE À: A VOS CRAMPONS OTTAWA
           </Typography>
-          <Typography variant="body1" gutterBottom>
-            Paris Saint-Germain Academy Canada est l'école officielle de
-            football du Paris Saint-Germain au CANADA offrant une occasion
-            unique à tous les amateurs de football âgés de 4 à 16 ans de
-            partager les valeurs d'un club axé sur l'excellence et la passion,
-            reconnu internationalement pour son savoir-faire et la qualité de
-            son développement des jeunes joueurs.
+          <Typography variant="body1">
+            A VOS CRAMPONS OTTAWA est l'école officielle de football d'Ottawa au
+            CANADA offrant une occasion unique à tous les amateurs de football
+            âgés de 4 à 16 ans de partager les valeurs d'un club axé sur
+            l'excellence et la passion, reconnu internationalement pour son
+            savoir-faire et la qualité de son développement des jeunes joueurs.
           </Typography>
         </div>
       </Grid>

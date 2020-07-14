@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
-    minHeight: "100vh",
   },
   main: {
     marginTop: theme.spacing(8),
@@ -46,7 +45,7 @@ export default function Footer() {
         <Container maxWidth="sm">
           <Typography variant="body1">
             L’ensemble des marques et droits d’auteurs sont utilisés avec le
-            consentement de la Major League Soccer
+            consentement de la Major League Soccer.
           </Typography>
           <Copyright />
         </Container>
