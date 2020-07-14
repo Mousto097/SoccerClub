@@ -20,14 +20,14 @@ const Navbar = () => {
           <Button color="inherit" to="/" component={Link}>
             Home
           </Button>
+          <Button color="inherit" to="/explore" component={Link}>
+            Nos programmes
+          </Button>
           <Button color="inherit" to="/enroll" component={Link}>
-            S'inscrire à un cours
+            S'inscrire à un programme
           </Button>
           <Button color="inherit" to="/book" component={Link}>
             Reserver un cours
-          </Button>
-          <Button color="inherit" to="/explore" component={Link}>
-            Nos programmes
           </Button>
         </Toolbar>
       </AppBar>

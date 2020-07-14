@@ -64,9 +64,6 @@ export default function FeaturedPost(props) {
             >
               {post.title}
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
-              {post.description}
-            </Typography>
           </div>
         </Grid>
       </Grid>

@@ -19,6 +19,7 @@ import coursTechniquesImage from "../img/cours-techniques.jpg";
 import coursCompetitifsImage from "../img/cours-competitifs.jpg";
 import coursExperienceImage from "../img/cours-experience.jpg";
 import coursEnduranceImage from "../img/cours-endurance.jpg";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -117,6 +118,30 @@ export default function Album() {
             >
               Écoles de soccer - programmes offers
             </Typography>
+            <div className={classes.heroButtons}>
+              <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    to="/enroll"
+                    component={Link}
+                  >
+                    S'inscrire à un programme
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    to="/book"
+                    component={Link}
+                  >
+                    Reserver un cours
+                  </Button>
+                </Grid>
+              </Grid>
+            </div>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
