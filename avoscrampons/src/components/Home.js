@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+// import Background from '../img/banner';
 
 const Home = () => {
   const classes = useStyles();
@@ -40,8 +41,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   image: {
-    backgroundImage:
-      "url(https://github.com/Mousto097/SEG3525-Module8-ReactWebApp/blob/master/avoscrampons/public/img/banner.jpg)",
+    backgroundImage: `url(${require("../img/banner.jpg")})`,
     backgroundRepeat: "no-repeat",
     backgroundColor:
       theme.palette.type === "light"
