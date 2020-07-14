@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import EnrollCourse from "./components/EnrollCourse";
 import BookCourse from "./components/BookCourse";
-import CourseCatalogueAndFieldAvailability from "./components/CourseCatalogueAndFieldAvailability";
+import CourseCatalogue from "./components/CourseCatalogue";
 
 function App() {
   return (
@@ -15,10 +15,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/enroll" component={EnrollCourse} />
         <Route path="/book" component={BookCourse} />
-        <Route
-          path="/explore"
-          component={CourseCatalogueAndFieldAvailability}
-        />
+        <Route path="/explore" component={CourseCatalogue} />
         <Footer />
       </div>
     </BrowserRouter>
