@@ -1,22 +1,20 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
+import FeaturedPost from "./FeaturedPost";
+
+const mainFeaturedPost = {
+  title: "Reserver un cours dès aujourd'hui",
+  description:
+    "Un chèque pour les frais d’inscriptions de 350$ pour 30 séances d’entraînement pour 10 jours l’été et 30 séances par mois en hiver.",
+  image: "../img/banner.jpg",
+  imgText: "main image description",
+  linkText: "Continue reading…",
+};
 
 const BookCourse = () => {
   return (
-    <Container maxWidth="md">
-      <div>
-        <h4 className="container">BookCourse</h4>
-        <p>
-          Adipisicing tempor excepteur adipisicing occaecat anim anim et anim
-          ullamco ipsum commodo enim. Reprehenderit est reprehenderit incididunt
-          cillum nisi non mollit consectetur cupidatat. Est exercitation irure
-          velit occaecat do esse magna tempor proident eu incididunt occaecat.
-          Minim exercitation aliqua ex duis laborum elit est Lorem. Ad ea veniam
-          proident ad officia in elit cupidatat consequat ad est enim pariatur
-          exercitation.
-        </p>
-      </div>
-    </Container>
+    <div>
+      <FeaturedPost post={mainFeaturedPost} />
+    </div>
   );
 };
 export default BookCourse;
