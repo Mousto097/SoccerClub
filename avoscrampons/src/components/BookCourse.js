@@ -1,5 +1,6 @@
 import React from "react";
 import FeaturedPost from "./FeaturedPost";
+import BookingForm from "./BookingForm";
 
 const mainFeaturedPost = {
   title: "Reserver un cours dès aujourd'hui",
@@ -13,7 +14,12 @@ const mainFeaturedPost = {
 const BookCourse = () => {
   return (
     <div>
-      <FeaturedPost post={mainFeaturedPost} />
+      <div>
+        <FeaturedPost post={mainFeaturedPost} />
+      </div>
+      <div>
+        <BookingForm />
+      </div>
     </div>
   );
 };

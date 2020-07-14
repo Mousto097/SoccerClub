@@ -1,5 +1,6 @@
 import React from "react";
 import FeaturedPost from "./FeaturedPost";
+import SignUpForm from "./SignUp";
 
 const mainFeaturedPost = {
   title: "Inscrivez-vous au Soccer À VOS CRAMPONS OTTAWA",
@@ -13,7 +14,12 @@ const mainFeaturedPost = {
 const EnrollCourse = () => {
   return (
     <div>
-      <FeaturedPost post={mainFeaturedPost} />
+      <div>
+        <FeaturedPost post={mainFeaturedPost} />
+      </div>
+      <div>
+        <SignUpForm />
+      </div>
     </div>
   );
 };

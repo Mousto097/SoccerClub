@@ -27,7 +27,7 @@ const Navbar = () => {
             Reserver un cours
           </Button>
           <Button color="inherit" to="/explore" component={Link}>
-            Cours et disponibilité des terrains
+            Nos programmes
           </Button>
         </Toolbar>
       </AppBar>
